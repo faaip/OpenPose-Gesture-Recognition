@@ -18,7 +18,8 @@ def write_log(log_name, message, log_type = 'INFO'):
         f.write('[{0}] [{2}]: {1}\n'.format(get_now(),message, log_type))
 
 def shutdown(message = 'Shutting down machine'):
-    sys.exit(message)
+    # sys.exit(message)
+    os.system('shutdown now')
 
 vid_dir = 'images'
 json_dir = 'json'
@@ -141,3 +142,5 @@ for j, i in enumerate(vid_list):
         
     
 print()
+write_log(log,'End of programm shutting down machine')
+shutdown()
