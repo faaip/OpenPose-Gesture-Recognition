@@ -4,5 +4,5 @@ logs/**
 
 .*
 !.gitignore
-
+.DS_Store
 
