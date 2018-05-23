@@ -28,7 +28,7 @@ def shutdown(message='Shutting down machine'):
     os.system('shutdown now')
 
 
-vid_dir = 'images'
+vid_dir = '/20bn-datasets/20bn-jester-v1'
 json_dir = 'json'
 log_dir = 'logs'
 label_dir = 'labels'
