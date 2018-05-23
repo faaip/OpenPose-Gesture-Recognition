@@ -9,7 +9,7 @@ from os.path import isdir, isfile, join
 
 import numpy as np
 import pandas as pd
-import tqdm
+from tqdm import tqdm
 
 from scripts.format_json import json_join
 
@@ -28,7 +28,7 @@ def shutdown(message='Shutting down machine'):
     os.system('shutdown now')
 
 
-vid_dir = '/20bn-datasets/20bn-jester-v1'
+vid_dir = '20bn-datasets/20bn-jester-v1'
 json_dir = 'json'
 log_dir = 'logs'
 label_dir = 'labels'
