@@ -5,11 +5,11 @@ import os
 import shutil
 import subprocess
 import sys
-import tqdm
 from os.path import isdir, isfile, join
 
 import numpy as np
 import pandas as pd
+import tqdm
 
 from scripts.format_json import json_join
 
@@ -85,8 +85,7 @@ except BaseException as e:
     shutdown()
 
 
-for j, i in tqdm(enumerate(vid_list)):
-    print('\r Iteration {} out of {}'.format(j + 1, len(vid_list)), end='')
+for i in tqdm(vid_list):
     input_dir = join(vid_dir, i)
     output_dir = join(json_dir, i)
     big_json_name = output_dir + '.json'
