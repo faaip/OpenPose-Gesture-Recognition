@@ -1,4 +1,5 @@
 # OpenPose-Gesture-Recognition
+#### Made with @vhargitai and @mxmxxl
 
 In this project we made a hand gesture classifier, to classify the videos from the [20bn jester dataset](https://20bn.com/datasets/jester)
 
